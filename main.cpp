@@ -6,7 +6,7 @@ int main()
     const int windowHeight{384};
 
     // Initialize the window
-    InitWindow(384, 384, "Jaspier Monster Slayer!");
+    InitWindow(windowWidth, windowHeight, "Jaspier Monster Slayer!");
     
     Texture2D map = LoadTexture("./nature_tileset/WorldMap.png");
 
