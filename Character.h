@@ -6,6 +6,7 @@ class Character
         Vector2 getWorldPos() { return worldPos; }
         void setScreenPos(int winWidth, int winHeight);
         void tick(float deltaTime);
+        void undoMovement();
 
     private:
         Texture2D texture{LoadTexture("./characters/knight_idle_spritesheet.png")};
@@ -23,4 +24,5 @@ class Character
         float speed{4.f};
         float width{};
         float height{};
+        Vector2 worldPosLastFrame{};
 };
